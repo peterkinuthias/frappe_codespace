@@ -1,0 +1,154 @@
+2024-09-22 16:04:33,754 DEBUG cd frappe-bench && python3 -m venv env
+2024-09-22 16:04:39,308 DEBUG cd frappe-bench && /workspace/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-09-22 16:04:46,199 DEBUG cd frappe-bench && /workspace/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-09-22 16:04:48,016 LOG Getting frappe
+2024-09-22 16:04:48,016 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-09-22 16:04:55,918 LOG Installing frappe
+2024-09-22 16:04:55,948 DEBUG cd /workspace/frappe-bench && /workspace/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/frappe-bench/apps/frappe 
+2024-09-22 16:06:43,277 DEBUG cd /workspace/frappe-bench/apps/frappe && yarn install --check-files
+2024-09-22 16:07:20,678 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-22 16:07:20,679 DEBUG cd frappe-bench && bench build
+2024-09-22 16:07:20,863 INFO /home/frappe/.local/bin/bench build
+2024-09-22 16:07:49,351 LOG setting up backups
+2024-09-22 16:07:49,388 LOG backups were set up
+2024-09-22 16:07:49,388 INFO Bench frappe-bench initialized
+2024-09-22 16:07:49,819 INFO /home/frappe/.local/bin/bench set-mariadb-host mariadb
+2024-09-22 16:07:50,216 INFO /home/frappe/.local/bin/bench set-redis-cache-host redis-cache:6379
+2024-09-22 16:07:50,634 INFO /home/frappe/.local/bin/bench set-redis-queue-host redis-queue:6379
+2024-09-22 16:07:51,098 INFO /home/frappe/.local/bin/bench set-redis-socketio-host redis-socketio:6379
+2024-09-22 16:07:51,520 INFO /home/frappe/.local/bin/bench new-site dev.localhost --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
+2024-09-22 16:08:54,899 INFO /home/frappe/.local/bin/bench --site dev.localhost set-config developer_mode 1
+2024-09-22 16:08:55,377 INFO /home/frappe/.local/bin/bench --site dev.localhost clear-cache
+2024-09-22 16:08:56,350 INFO /home/frappe/.local/bin/bench use dev.localhost
+2024-09-22 16:09:38,944 INFO /home/frappe/.local/bin/bench --version
+2024-09-22 16:10:10,688 INFO /home/frappe/.local/bin/bench start
+2024-09-22 16:10:11,295 INFO /home/frappe/.local/bin/bench worker
+2024-09-22 16:10:11,465 INFO /home/frappe/.local/bin/bench schedule
+2024-09-22 16:10:11,473 INFO /home/frappe/.local/bin/bench serve --port 8000
+2024-09-22 16:10:11,547 INFO /home/frappe/.local/bin/bench watch
+2024-09-22 16:18:05,634 INFO /home/frappe/.local/bin/bench new-site masomodemo --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
+2024-09-22 16:21:19,823 INFO /home/frappe/.local/bin/bench --site masomodemo set-config developer_mode 1
+2024-09-22 16:21:36,547 INFO /home/frappe/.local/bin/bench --site masomodemo clear-cache
+2024-09-22 16:22:24,042 INFO /home/frappe/.local/bin/bench use masomodemo
+2024-09-22 17:26:22,639 INFO /home/frappe/.local/bin/bench start
+2024-09-22 17:26:23,795 INFO /home/frappe/.local/bin/bench watch
+2024-09-22 17:26:23,968 INFO /home/frappe/.local/bin/bench schedule
+2024-09-22 17:26:24,086 INFO /home/frappe/.local/bin/bench serve --port 8000
+2024-09-22 17:26:24,112 INFO /home/frappe/.local/bin/bench worker
+2024-09-22 18:17:50,580 INFO /home/frappe/.local/bin/bench status
+2024-09-22 18:17:59,701 INFO /home/frappe/.local/bin/bench --status
+2024-09-22 18:18:11,188 INFO /home/frappe/.local/bin/bench start
+2024-09-22 18:18:12,008 INFO /home/frappe/.local/bin/bench serve --port 8000
+2024-09-22 18:18:12,045 INFO /home/frappe/.local/bin/bench worker
+2024-09-22 18:18:12,100 INFO /home/frappe/.local/bin/bench schedule
+2024-09-22 18:18:12,148 INFO /home/frappe/.local/bin/bench watch
+2024-09-22 18:30:50,104 INFO /home/frappe/.local/bin/bench new-site airplane_mode --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
+2024-09-22 18:33:00,542 INFO /home/frappe/.local/bin/bench --site airplane_mode set-config developer_mode 1
+2024-09-22 18:33:15,226 INFO /home/frappe/.local/bin/bench --site airplane_mode clear-cache
+2024-09-22 18:37:08,176 INFO /home/frappe/.local/bin/bench browse airplane_mode
+2024-09-22 18:38:09,113 INFO /home/frappe/.local/bin/bench use airplane_mode
+2024-09-22 18:38:16,872 INFO /home/frappe/.local/bin/bench browse airplane_mode
+2024-09-22 18:38:50,306 INFO /home/frappe/.local/bin/bench start
+2024-09-22 18:38:51,133 INFO /home/frappe/.local/bin/bench serve --port 8000
+2024-09-22 18:38:51,248 INFO /home/frappe/.local/bin/bench watch
+2024-09-22 18:38:51,249 INFO /home/frappe/.local/bin/bench schedule
+2024-09-22 18:38:51,274 INFO /home/frappe/.local/bin/bench worker
+2024-09-24 10:01:24,562 INFO /home/frappe/.local/bin/bench --site airplane_mode clear-cache
+2024-09-24 10:01:24,697 WARNING Command not being executed in bench directory
+2024-09-24 10:01:56,596 INFO /home/frappe/.local/bin/bench use airplane_mode
+2024-09-24 10:01:56,597 WARNING Command not being executed in bench directory
+2024-09-24 10:02:22,704 INFO /home/frappe/.local/bin/bench
+2024-09-24 10:02:31,430 INFO /home/frappe/.local/bin/bench start
+2024-09-24 10:02:31,430 WARNING Command not being executed in bench directory
+2024-09-24 10:02:33,984 INFO /home/frappe/.local/bin/bench serve --port 8000
+2024-09-24 10:02:33,984 WARNING Command not being executed in bench directory
+2024-09-24 10:02:34,115 INFO /home/frappe/.local/bin/bench schedule
+2024-09-24 10:02:34,116 WARNING Command not being executed in bench directory
+2024-09-24 10:04:01,806 INFO /home/frappe/.local/bin/bench
+2024-09-24 10:04:36,498 INFO /home/frappe/.local/bin/bench branch
+2024-09-24 10:04:36,499 WARNING Command not being executed in bench directory
+2024-09-24 11:27:56,519 INFO /home/frappe/.local/bin/bench status
+2024-09-24 11:27:56,520 WARNING Command not being executed in bench directory
+2024-09-24 11:28:18,433 INFO /home/frappe/.local/bin/bench --help
+2024-09-24 11:28:18,433 WARNING Command not being executed in bench directory
+2024-09-24 11:28:29,309 INFO /home/frappe/.local/bin/bench setup
+2024-09-24 11:28:29,310 WARNING Command not being executed in bench directory
+2024-09-24 11:28:52,063 INFO /home/frappe/.local/bin/bench update
+2024-09-24 11:28:52,063 WARNING Command not being executed in bench directory
+2024-09-24 11:28:53,520 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-09-24 11:29:04,954 WARNING /home/frappe/.local/bin/bench update executed with exit code 1
+2024-09-24 11:29:30,431 INFO /home/frappe/.local/bin/bench use airplane_mode
+2024-09-24 11:29:30,432 WARNING Command not being executed in bench directory
+2024-09-24 11:29:59,744 INFO /home/frappe/.local/bin/bench --site airplane_mode clear-cache
+2024-09-24 11:29:59,744 WARNING Command not being executed in bench directory
+2024-09-24 11:30:38,868 INFO /home/frappe/.local/bin/bench start
+2024-09-24 11:30:38,869 WARNING Command not being executed in bench directory
+2024-09-24 11:30:39,511 INFO /home/frappe/.local/bin/bench schedule
+2024-09-24 11:30:39,513 WARNING Command not being executed in bench directory
+2024-09-24 11:38:39,236 INFO /home/frappe/.local/bin/bench --site airplane_mode clear-cache
+2024-09-24 11:38:39,462 WARNING Command not being executed in bench directory
+2024-09-24 11:39:12,047 INFO /home/frappe/.local/bin/bench use airplane_mode
+2024-09-24 11:39:12,047 WARNING Command not being executed in bench directory
+2024-09-24 11:44:48,982 INFO /home/frappe/.local/bin/bench init
+2024-09-24 11:44:48,994 WARNING /home/frappe/.local/bin/bench init executed with exit code 2
+2024-09-24 11:46:43,604 INFO /home/frappe/.local/bin/bench --help
+2024-09-24 11:46:43,604 WARNING Command not being executed in bench directory
+2024-09-24 11:46:50,194 INFO /home/frappe/.local/bin/bench start
+2024-09-24 11:46:50,195 WARNING Command not being executed in bench directory
+2024-09-24 11:46:51,008 INFO /home/frappe/.local/bin/bench watch
+2024-09-24 11:46:51,009 WARNING Command not being executed in bench directory
+2024-09-24 11:46:51,015 INFO /home/frappe/.local/bin/bench serve --port 8000
+2024-09-24 11:46:51,018 WARNING Command not being executed in bench directory
+2024-09-24 11:47:22,851 INFO /home/frappe/.local/bin/bench update
+2024-09-24 11:47:22,852 WARNING Command not being executed in bench directory
+2024-09-24 11:47:24,301 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-09-24 11:47:38,888 WARNING /home/frappe/.local/bin/bench update executed with exit code 1
+2024-09-24 12:00:57,251 INFO /home/frappe/.local/bin/bench use airplane_mode
+2024-09-24 12:00:57,253 WARNING Command not being executed in bench directory
+2024-09-24 12:01:06,569 INFO /home/frappe/.local/bin/bench start
+2024-09-24 12:01:06,570 WARNING Command not being executed in bench directory
+2024-09-24 12:01:09,411 INFO /home/frappe/.local/bin/bench serve --port 8000
+2024-09-24 12:01:09,412 WARNING Command not being executed in bench directory
+2024-09-24 12:01:09,425 INFO /home/frappe/.local/bin/bench watch
+2024-09-24 12:01:09,426 WARNING Command not being executed in bench directory
+2024-09-24 12:01:09,455 INFO /home/frappe/.local/bin/bench schedule
+2024-09-24 12:01:09,456 WARNING Command not being executed in bench directory
+2024-09-24 12:01:09,478 INFO /home/frappe/.local/bin/bench worker
+2024-09-24 12:01:09,479 WARNING Command not being executed in bench directory
+2024-09-24 12:02:10,276 INFO /home/frappe/.local/bin/bench bench new-site airplane_mode1 --mariadb-root-password 123 --admin-password admin
+2024-09-24 12:02:10,277 WARNING Command not being executed in bench directory
+2024-09-24 12:02:19,706 INFO /home/frappe/.local/bin/bench init
+2024-09-24 12:02:19,715 WARNING /home/frappe/.local/bin/bench init executed with exit code 2
+2024-09-25 09:32:15,721 INFO /home/frappe/.local/bin/bench
+2024-09-25 09:32:30,263 INFO /home/frappe/.local/bin/bench start
+2024-09-25 09:32:30,263 WARNING Command not being executed in bench directory
+2024-09-25 09:32:31,126 INFO /home/frappe/.local/bin/bench serve --port 8000
+2024-09-25 09:32:31,127 WARNING Command not being executed in bench directory
+2024-09-25 09:32:31,245 INFO /home/frappe/.local/bin/bench worker
+2024-09-25 09:32:31,248 WARNING Command not being executed in bench directory
+2024-09-25 09:32:31,259 INFO /home/frappe/.local/bin/bench schedule
+2024-09-25 09:32:31,261 WARNING Command not being executed in bench directory
+2024-09-25 09:32:31,297 INFO /home/frappe/.local/bin/bench watch
+2024-09-25 09:32:31,297 WARNING Command not being executed in bench directory
+2024-09-25 09:32:49,789 INFO /home/frappe/.local/bin/bench clear-cache
+2024-09-25 09:32:49,790 WARNING Command not being executed in bench directory
+2024-09-25 09:33:16,802 INFO /home/frappe/.local/bin/bench --site airplane_mode set-config developer_mode 1
+2024-09-25 09:33:16,802 WARNING Command not being executed in bench directory
+2024-09-25 09:36:36,310 INFO /home/frappe/.local/bin/bench start
+2024-09-25 09:36:36,310 WARNING Command not being executed in bench directory
+2024-09-25 09:36:36,985 INFO /home/frappe/.local/bin/bench worker
+2024-09-25 09:36:36,986 WARNING Command not being executed in bench directory
+2024-09-25 09:36:36,990 INFO /home/frappe/.local/bin/bench watch
+2024-09-25 09:36:36,991 WARNING Command not being executed in bench directory
